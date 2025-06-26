@@ -151,7 +151,7 @@
                   <div class="text-xs text-gray-500 dark:text-gray-400">Occupation</div>
                 </div>
                 <div class="bg-green-50 dark:bg-green-900/30 rounded-lg p-3">
-                  <div class="text-2xl font-bold text-green-600 dark:text-green-400">€12,450</div>
+                  <div class="text-2xl font-bold text-green-600 dark:text-green-400">$13,450</div>
                   <div class="text-xs text-gray-500 dark:text-gray-400">Revenus</div>
                 </div>
               </div>

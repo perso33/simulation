@@ -99,9 +99,9 @@ export const orders = ref<Order[]>([
 ])
 
 export const reservations = ref<Reservation[]>([
-  { id: 1, guestName: 'Alice Moreau', email: 'alice@email.com', phone: '0123456789', roomNumber: '104', checkin: '2025-06-25', checkout: '2025-06-27', status: 'pending', guests: 2, totalPrice: 258, notes: 'Anniversaire de mariage' },
-  { id: 2, guestName: 'Bob Wilson', email: 'bob@email.com', phone: '0987654321', roomNumber: '205', checkin: '2025-06-25', checkout: '2025-06-26', status: 'confirmed', guests: 1, totalPrice: 129 },
-  { id: 3, guestName: 'Claire Chen', email: 'claire@email.com', phone: '0555123456', roomNumber: '304', checkin: '2025-06-25', checkout: '2025-06-29', status: 'confirmed', guests: 3, totalPrice: 516, notes: 'Voyage d\'affaires' }
+  { id: 1, guestName: 'Alice Moreau', email: 'alice@email.com', phone: '0123456789', roomNumber: '104', checkin: '2025-06-25', checkout: '2025-06-27', status: 'pending', guests: 2, totalPrice: 280, notes: 'Anniversaire de mariage' },
+  { id: 2, guestName: 'Bob Wilson', email: 'bob@email.com', phone: '0987654321', roomNumber: '205', checkin: '2025-06-25', checkout: '2025-06-26', status: 'confirmed', guests: 1, totalPrice: 140 },
+  { id: 3, guestName: 'Claire Chen', email: 'claire@email.com', phone: '0555123456', roomNumber: '304', checkin: '2025-06-25', checkout: '2025-06-29', status: 'confirmed', guests: 3, totalPrice: 560, notes: 'Voyage d\'affaires' }
 ])
 
 // Computed properties

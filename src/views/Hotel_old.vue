@@ -104,7 +104,7 @@
           </div>
           
           <div class="mt-3 text-right">
-            <span class="text-lg font-bold text-gray-900">{{ room.price }}€</span>
+            <span class="text-lg font-bold text-gray-900">${{ room.price }}</span>
             <span class="text-sm text-gray-500">/nuit</span>
           </div>
         </div>
@@ -176,7 +176,7 @@
             <select v-model="newReservation.roomNumber" required class="input-field">
               <option value="">Sélectionner une chambre</option>
               <option v-for="room in availableRoomsOnly" :key="room.number" :value="room.number">
-                {{ room.number }} - {{ room.type }} ({{ room.price }}€/nuit)
+                {{ room.number }} - {{ room.type }} (${{ room.price }}/nuit)
               </option>
             </select>
           </div>
