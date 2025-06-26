@@ -49,18 +49,18 @@ export interface Reservation {
 
 // État global
 export const rooms = ref<Room[]>([
-  { number: '101', type: 'Simple', floor: 1, status: 'available', price: 89 },
-  { number: '102', type: 'Double', floor: 1, status: 'occupied', price: 129, guest: { name: 'Marie Dupont', checkout: '2025-06-26' } },
-  { number: '103', type: 'Suite', floor: 1, status: 'available', price: 199 },
-  { number: '201', type: 'Simple', floor: 2, status: 'occupied', price: 89, guest: { name: 'Jean Martin', checkout: '2025-06-27' } },
-  { number: '202', type: 'Double', floor: 2, status: 'maintenance', price: 129 },
-  { number: '203', type: 'Suite', floor: 2, status: 'available', price: 199 },
-  { number: '301', type: 'Simple', floor: 3, status: 'available', price: 89 },
-  { number: '302', type: 'Double', floor: 3, status: 'occupied', price: 129, guest: { name: 'Sophie Laurent', checkout: '2025-06-25' } },
-  { number: '303', type: 'Suite', floor: 3, status: 'available', price: 199 },
-  { number: '401', type: 'Suite', floor: 4, status: 'available', price: 299 },
-  { number: '402', type: 'Suite', floor: 4, status: 'occupied', price: 299, guest: { name: 'Pierre Dubois', checkout: '2025-06-28' } },
-  { number: '403', type: 'Suite', floor: 4, status: 'available', price: 299 }
+  { number: '101', type: 'Simple', floor: 1, status: 'available', price: 95 },
+  { number: '102', type: 'Double', floor: 1, status: 'occupied', price: 140, guest: { name: 'Marie Dupont', checkout: '2025-06-26' } },
+  { number: '103', type: 'Suite', floor: 1, status: 'available', price: 215 },
+  { number: '201', type: 'Simple', floor: 2, status: 'occupied', price: 95, guest: { name: 'Jean Martin', checkout: '2025-06-27' } },
+  { number: '202', type: 'Double', floor: 2, status: 'maintenance', price: 140 },
+  { number: '203', type: 'Suite', floor: 2, status: 'available', price: 215 },
+  { number: '301', type: 'Simple', floor: 3, status: 'available', price: 95 },
+  { number: '302', type: 'Double', floor: 3, status: 'occupied', price: 140, guest: { name: 'Sophie Laurent', checkout: '2025-06-25' } },
+  { number: '303', type: 'Suite', floor: 3, status: 'available', price: 215 },
+  { number: '401', type: 'Suite', floor: 4, status: 'available', price: 325 },
+  { number: '402', type: 'Suite', floor: 4, status: 'occupied', price: 325, guest: { name: 'Pierre Dubois', checkout: '2025-06-28' } },
+  { number: '403', type: 'Suite', floor: 4, status: 'available', price: 325 }
 ])
 
 export const orders = ref<Order[]>([
@@ -70,10 +70,10 @@ export const orders = ref<Order[]>([
     time: '12:30',
     status: 'pending',
     items: [
-      { id: 1, name: 'Salade César', price: 12.50, quantity: 1 },
-      { id: 2, name: 'Steak frites', price: 22.00, quantity: 1 }
+      { id: 1, name: 'Salade César', price: 13.50, quantity: 1 },
+      { id: 2, name: 'Steak frites', price: 24.00, quantity: 1 }
     ],
-    total: 34.50
+    total: 37.50
   },
   {
     id: 1002,
@@ -81,10 +81,10 @@ export const orders = ref<Order[]>([
     time: '12:45',
     status: 'preparing',
     items: [
-      { id: 3, name: 'Pizza Margherita', price: 14.00, quantity: 2 },
-      { id: 4, name: 'Tiramisu', price: 8.00, quantity: 1 }
+      { id: 3, name: 'Pizza Margherita', price: 15.00, quantity: 2 },
+      { id: 4, name: 'Tiramisu', price: 8.50, quantity: 1 }
     ],
-    total: 36.00
+    total: 38.50
   },
   {
     id: 1003,
@@ -92,9 +92,9 @@ export const orders = ref<Order[]>([
     time: '13:15',
     status: 'ready',
     items: [
-      { id: 5, name: 'Poisson du jour', price: 18.50, quantity: 1 }
+      { id: 5, name: 'Poisson du jour', price: 20.00, quantity: 1 }
     ],
-    total: 18.50
+    total: 20.00
   }
 ])
 
@@ -346,8 +346,8 @@ export const getDefaultRouteForRole = (role: string): string => {
 
 // Utilitaires
 export const formatCurrency = (amount: number): string => {
-  return new Intl.NumberFormat('fr-FR', {
+  return new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'EUR'
+    currency: 'USD'
   }).format(amount)
 }

@@ -208,8 +208,8 @@ const roomsChartData = [
 
 const revenueLabels = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim']
 const revenueDatasets = [{
-  label: 'Revenus (€)',
-  data: [1200, 1900, 3000, 5000, 2000, 3000, 4500],
+  label: 'Revenus ($)',
+  data: [1300, 2050, 3250, 5400, 2150, 3250, 4850],
   color: '#3B82F6'
 }]
 

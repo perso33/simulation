@@ -290,8 +290,8 @@
             <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Monnaie</label>
               <select v-model="hotelSettings.currency" class="input-field">
-                <option value="EUR">Euro (€)</option>
                 <option value="USD">Dollar ($)</option>
+                <option value="EUR">Euro (€)</option>
                 <option value="GBP">Livre (£)</option>
               </select>
             </div>
@@ -431,7 +431,7 @@ const hotelSettings = ref({
   email: 'contact@hotel-prestige.com',
   taxRate: 20.0,
   serviceRate: 5.0,
-  currency: 'EUR',
+  currency: 'USD',
   notifications: {
     newReservations: true,
     lowStock: true,

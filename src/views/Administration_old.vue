@@ -314,8 +314,8 @@
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Devise</label>
                 <select class="input-field">
-                  <option>EUR - Euro</option>
                   <option>USD - Dollar</option>
+                  <option>EUR - Euro</option>
                   <option>GBP - Livre Sterling</option>
                 </select>
               </div>
@@ -440,9 +440,9 @@ const employees: Employee[] = [
 
 // Méthodes
 const formatCurrency = (amount: number) => {
-  return new Intl.NumberFormat('fr-FR', {
+  return new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'EUR'
+    currency: 'USD'
   }).format(amount)
 }
 
